@@ -46,6 +46,7 @@ member fields{
  when borrowed (0) if not borrowing any
  
 }'''
+
 '''
 book fields{
  name str
