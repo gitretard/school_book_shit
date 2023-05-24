@@ -4,6 +4,7 @@ book id
 
 keep track of time:
 '''
+
 use std::fs;
 use std::io::prelude::*;
 use std::time::{Duration, Instant};
@@ -38,6 +39,7 @@ fn main() {
 
 
 '''
+
 member fields{
  name str
  id u32
@@ -45,7 +47,9 @@ member fields{
  borrowed books id str. split with ','
  when borrowed (0) if not borrowing any
  
-}'''
+}
+
+'''
 
 '''
 book fields{
@@ -58,6 +62,7 @@ on every loop look for any members that should be already returnign their borrow
 
 read the whole thing into memory,edit,write
 '''
+
 use std::fs;
 use std::io::prelude::*;
 
@@ -84,10 +89,13 @@ fn main() -> std::io::Result<()> {
 
     Ok(())
 }
+
 '''
 
 wtf is this shit
 '''
+
+
 use memmap::MmapOptions;
 use std::fs::OpenOptions;
 use std::io::prelude::*;
@@ -117,4 +125,6 @@ fn main() -> std::io::Result<()> {
 
     Ok(())
 }
+
+
 '''
