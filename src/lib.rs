@@ -21,14 +21,14 @@ pub struct Member {
 
 pub struct rec {
     pub uidcount: u32,
-    pub Members: HashMap<String,String>,
+    pub Member: HashMap<String,Member>,
 }
 
 pub fn init() -> rec {
     let path = path::Path::new("rec");
     let mut nit = rec {
         uidcount: 0,
-        Members: HashMap::new(),
+        Member: HashMap::new(),
     };
     if !path.exists() {
         println!("rec.rec not found in current running path!\ncalrecg rec.init()");
