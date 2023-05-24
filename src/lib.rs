@@ -60,7 +60,7 @@ impl rec {
         self.uidcount = 0
     }
     pub fn register(&mut self,name: &str,) {
-        if self.Members.contains_key(name){ // Might be hash conflict. But who tf cares!
+        if self.Member.contains_key(name){ // Might be hash conflict. But who tf cares!
             println!("Member already exists. Please remove this member or modify their data!")
         }
     }
