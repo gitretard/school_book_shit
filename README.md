@@ -1,3 +1,6 @@
+# DONT FUCKING READ THE CODE OH MY FUCKING GOD
+
+
 borrow checking
 member id (u32 0..?)
 book id
