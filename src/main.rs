@@ -3,5 +3,5 @@
 #[allow(dead_code)]
 mod lib;
 fn main(){
-    let lib = lib::init();
+    
 }
