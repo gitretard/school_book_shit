@@ -4,8 +4,14 @@
 mod lib;
 fn main(){
     let mut steve = lib::steve{uidcount:0,records:Vec::new()};
-    steve.init_record();
+    let path = std::path::Path::new("rec");
+    if !path.exists(){
+        steve.init_record()
+    }
     steve.sync();
     steve.record_register("bob");
     steve.record_register("mike");
+    steve.record_register("john");
+    steve.record_register("joe");
+    
 }
