@@ -7,5 +7,5 @@ fn main(){
     steve.init_record();
     steve.sync();
     steve.record_register("bob");
-    steve.record_register("bob");
+    steve.record_register("mike");
 }

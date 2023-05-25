@@ -77,6 +77,7 @@ impl steve {
         // sync first
         self.records.insert(self.records.len(),name.to_string());
         let mut file = fs::File::options().append(true).write(true).open("rec").pretty_unwrap(Some("steve: cannot open rec for register"));
-        file.write(format!("{}::{}", name, self.uidcount).as_bytes()).pretty_unwrap(Some("steve: cannot write to rec for register"));
+        file.write(format!("{}::{}\n", name, self.uidcount).as_bytes()).pretty_unwrap(Some("steve: cannot write to rec for register"));
+        self.uidcount+=1
     }
 }
